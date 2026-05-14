@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.exceloncr.com/sitemap.xml
+
+# Disallow admin areas if needed
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 1

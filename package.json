@@ -1,0 +1,22 @@
+{
+  "name": "Excelon Website",
+  "version": "1.0.0",
+  "description": "Sitio web oficial de Excelon - Distribuidora de alimentos naturales y saludables",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx http-server -p 8000 -o",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "echo 'Ready for deployment'"
+  },
+  "keywords": [
+    "excelon",
+    "alimentos naturales",
+    "distribuidor",
+    "costa rica",
+    "productos orgánicos"
+  ],
+  "author": "Distribuidora Excelon S.A.",
+  "license": "UNLICENSED",
+  "private": true
+}

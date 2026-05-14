@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Test - Season Sans</title>
+    <style>
+        @font-face {
+            font-family: 'Season Sans';
+            src: url('../fonts/SeasonSansTRIAL-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Season Sans', sans-serif;
+            background: linear-gradient(135deg, #0068D8 0%, #FFEFD7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: #0068D8;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .alphabet {
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            line-height: 1.8;
+        }
+        
+        .weights {
+            margin-top: 2rem;
+        }
+        
+        .weight-sample {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        
+        .label {
+            font-size: 0.875rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .thin { font-weight: 100; }
+        .light { font-weight: 300; }
+        .regular { font-weight: 400; }
+        .medium { font-weight: 500; }
+        .semibold { font-weight: 600; }
+        .bold { font-weight: 700; }
+        .black { font-weight: 900; }
+        
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-left: 0.5rem;
+        }
+        
+        .loaded {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .simulated {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .check {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #e7f3ff;
+            border-left: 4px solid #0068D8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EXCELON</h1>
+        <p style="font-size: 1.25rem; color: #666; margin-bottom: 2rem;">
+            Season Sans Font Test
+        </p>
+        
+        <div class="alphabet">
+            <div>ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div>abcdefghijklmnopqrstuvwxyz</div>
+            <div>0123456789 !@#$%^&*()</div>
+            <div>¡¿áéíóúñÁÉÍÓÚÑ</div>
+        </div>
+        
+        <div class="weights">
+            <h2 style="color: #0068D8; margin-bottom: 1rem;">Font Weights</h2>
+            
+            <div class="weight-sample">
+                <div class="label">
+                    Thin (100) 
+                    <span class="status simulated">Simulado</span>
+                </div>
+                <div class="thin" style="font-size: 1.5rem;">
+                    Alimentos y bebidas naturales, saludables y orgánicas
+                </div>
+            </div>
+            
+            <div class="weight-sample">
+                <div class="label">
+                    Light (300) 
+                    <span class="status simulated">Simulado</span>
+                </div>
+                <div class="light" style="font-size: 1.5rem;">
+                    Alimentos y bebidas naturales, saludables y orgánicas
+                </div>
+            </div>
+            
+            <div class="weight-sample">
+                <div class="label">
+                    Regular (400) 
+                    <span class="status loaded">✓ Cargado</span>
+                </div>
+                <div class="regular" style="font-size: 1.5rem;">
+                    Alimentos y bebidas naturales, saludables y orgánicas
+                </div>
+            </div>
+            
+            <div class="weight-sample">
+                <div class="label">
+                    Medium (500) 
+                    <span class="status simulated">Simulado</span>
+                </div>
+                <div class="medium" style="font-size: 1.5rem;">
+                    Alimentos y bebidas naturales, saludables y orgánicas
+                </div>
+            </div>
+            
+            <div class="weight-sample">
+                <div class="label">
+                    SemiBold (600) 
+                    <span class="status simulated">Simulado</span>
+                </div>
+                <div class="semibold" style="font-size: 1.5rem;">
+                    Alimentos y bebidas naturales, saludables y orgánicas
+                </div>
+            </div>
+            
+            <div class="weight-sample">
+                <div class="label">
+                    Bold (700) 
+                    <span class="status simulated">Simulado</span>
+                </div>
+                <div class="bold" style="font-size: 1.5rem;">
+                    Alimentos y bebidas naturales, saludables y orgánicas
+                </div>
+            </div>
+            
+            <div class="weight-sample">
+                <div class="label">
+                    Black (900) 
+                    <span class="status simulated">Simulado</span>
+                </div>
+                <div class="black" style="font-size: 1.5rem;">
+                    Alimentos y bebidas naturales, saludables y orgánicas
+                </div>
+            </div>
+        </div>
+        
+        <div class="check">
+            <strong>✓ Font Check:</strong>
+            <div style="margin-top: 0.5rem;">
+                Abre DevTools (F12) → Network → Fonts para verificar que 
+                <code style="background: #fff; padding: 0.25rem 0.5rem; border-radius: 3px;">
+                    SeasonSansTRIAL-Regular.ttf
+                </code> 
+                se haya cargado correctamente.
+            </div>
+        </div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" style="display: inline-block; background: #0068D8; color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
+                Ver Sitio Web →
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        // Check if font loaded
+        document.fonts.ready.then(() => {
+            const fontFace = document.fonts.check('1rem "Season Sans"');
+            console.log('Season Sans loaded:', fontFace);
+            
+            if (fontFace) {
+                console.log('✓ Season Sans font is available');
+            } else {
+                console.warn('⚠️ Season Sans font not loaded, using fallback');
+            }
+        });
+    </script>
+</body>
+</html>
